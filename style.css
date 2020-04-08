@@ -37,9 +37,31 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 background-color: #FFDF81;
 }
 
-.keyboard__key:active {
+.keyboard__key:active{
   background-color: rgba(166, 110, 0, 0.2);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  animation: nev 3s;
+    }
+
+@keyframes nev {
+0% {
+opacity: 0.5;
+border-radius: 50%;
+}
+20% {
+opacity: 0.65;
+border-radius: 35%;
+}
+
+50% {
+opacity: 0.85;
+border-radius: 17%;
+}
+
+100% {
+opacity: 1;
+border-radius: 0;
+}
 }
 
 .keyboard__key--extra-wide {
@@ -61,6 +83,10 @@ font-size: 40px;
 .active{
 background-color: rgba(166, 110, 0, 0.2);
 box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.active1{
+animation: nev 5s alternate;
 }
 
 #up_low{
